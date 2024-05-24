@@ -2,15 +2,18 @@ import React from "react";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full mb-[100px] md:mb-5 pb-10 " id="contact">
+    <footer className="w-full mb-[100px] md:mb-7 pb-10 " id="contact">
       <div className="w-full absolute left-0 -bottom-72 min-h-96 pointer-events-none">
-        <img
+        <Image
           src="/footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50"
+          width={1920}
+          height={1080}
         />
       </div>
 
@@ -32,20 +35,21 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-6 md:gap-0">
         <p className="md:text-base test-sm md:font-normal font-light">
           Copyright © 2024 Bartosz
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map(({ id, img }) => (
-            <div
+          {socialMedia.map(({ id, img, link }) => (
+            <a
+              href={link}
               key={id}
               className="w-10 h-10 flex justify-center items-center cursor-pointer backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              target="_blank"
             >
-              {/* width 20 and height 20 */}
-              <img src={img} alt={id} />
-            </div>
+              <Image src={img} alt={id} width={20} height={20} />
+            </a>
           ))}
         </div>
       </div>
