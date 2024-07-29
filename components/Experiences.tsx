@@ -1,12 +1,25 @@
-import { workExperience } from "@/data";
+// import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/MovingBorders";
+import {useTranslations} from 'next-intl'
 
 const Experiences = () => {
+  const t = useTranslations("Experiences");
+  const keys = ["experience1", "experience2"];
+
+  const workExperience = keys.map((key) => {
+    return {
+      id: Number(t(`${key}.id`)),
+      thumbnail: t(`${key}.thumbnail`),
+      title: t(`${key}.title`),
+      desc: t(`${key}.desc`),
+    }
+  })
+
   return (
     <div className="py-20" id="testimonials">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        {t("title1")} <span className="text-purple">{t("title2")}</span>
       </h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map(({ id, thumbnail, title, desc }) => (

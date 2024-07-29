@@ -1,0 +1,152 @@
+{
+  "Navbar": {
+    "About": {
+      "title": "O mnie",
+      "link": "#about"
+    },
+    "Projects": {
+      "title": "Projekty",
+      "link": "#projects"
+    },
+    "Approach": {
+      "title": "Podejście",
+      "link": "#approach"
+    },
+    "Contact": {
+      "title": "Kontakt",
+      "link": "#contact"
+    }
+  },
+  "Hero": {
+    "h2": "Magia dynamicznych stron internetowych z Next.js",
+    "animatedText": "Przekształcanie koncepcji w spójne doświadczenia użytkowników",
+    "greeting": "Cześć, jestem Bartosz, Fullstack developer z Polski",
+    "button": "Zobacz moje projekty"
+  },
+  "Grid": {
+    "buttonCta": "Skopiuj mój email",
+    "buttonAfterCta": "Email skopiowany",
+    "first": {
+      "id": "1",
+      "title": "Priorytetowo traktuję współpracę z klientem, wspierając otwartą komunikację",
+      "description": "",
+      "className": "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      "imgClassName": "w-full h-full",
+      "titleClassName": "justify-end",
+      "img": "/b1.svg",
+      "spareImg": ""
+    },
+    "second": {
+      "id": "2",
+      "title": "Jestem bardzo elastyczny, jeśli chodzi o strefy czasowe",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "",
+      "spareImg": ""
+    },
+    "third": {
+      "id": "3",
+      "title": "Mój stos technologiczny",
+      "description": "Nieustannie staram się doskonalić",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-center",
+      "img": "",
+      "spareImg": ""
+    },
+    "fourth": {
+      "id": "4",
+      "title": "Entuzjasta technologii z pasją do rozwoju.",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "/grid.svg",
+      "spareImg": "/b4.svg"
+    },
+    "fifth": {
+      "id": "5",
+      "title": "Obecnie buduje aplikację do czatu w czasie rzeczywistym.",
+      "description": "Aktualne informacje",
+      "className": "md:col-span-3 md:row-span-2",
+      "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
+      "titleClassName": "justify-center md:justify-start lg:justify-center",
+      "img": "/b5.svg",
+      "spareImg": "/grid.svg"
+    },
+    "sixth": {
+      "id": "6",
+      "title": "Chcesz rozpocząć wspólny projekt?",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-center md:max-w-full max-w-60 text-center",
+      "img": "",
+      "spareImg": ""
+    }
+  },
+  "RecentProjects": {
+    "title1": "Niewielki wybór moich",
+    "title2": "ostatnich projektów",
+    "cta": "Sprawdź stronę",
+    "project1": {
+      "id": "1",
+      "title": "DevOverflow",
+      "des": "Aplikacja społecznościowa dla deweloperów do wzajemnej pomocy w rozwiązywaniu problemów.",
+      "img": "/devoverflow.svg",
+      "link": "https://github.com/Podziuu/devoverflow_nextjs13"
+    },
+    "project1icons": {
+        "icon1": "/next.svg",
+        "icon2": "/tail.svg",
+        "icon3": "/ts.svg",
+        "icon4": "/c.svg"
+    }
+  },
+  "Experiences": {
+    "title1": "Moje",
+    "title2": "doświadczenie",
+    "experience1": {
+        "id": "1",
+        "title": "Student Informatyki Stosowanej",
+        "desc": "Obecnie studiuje informatykę na Politechnice Łódzkiej, zdobywając solidne podstawy programowania, algorytmów i zasad inżynierii oprogramowania.",
+        "className": "md:col-span-2",
+        "thumbnail": "/exp1.svg"
+    },
+    "experience2": {
+        "id": "2",
+        "title": "Entuzjasta kursów online",
+        "desc": "Ukończyłen liczne kursy online na platformach takich jak Coursera, Udemy i edX.",
+        "className": "md:col-span-2",
+        "thumbnail": "/exp2.svg"
+    }
+  },
+  "Approach": {
+    "title1": "Moje",
+    "title2": "podejście",
+    "approach1": {
+        "title": "Planowanie & Strategia",
+        "des": "Będziemy współpracować, aby określić cele Twojej witryny, grupę docelową i kluczowe funkcjonalności. Omówimy takie kwestie jak struktura witryny, nawigacja i wymagania dotyczące treści.",
+        "heading": "Etap 1"
+    },
+    "approach2": {
+        "title": "Rozwój i aktualizacja postępów",
+        "des": "Kiedy już uzgodnimy plan, włączam moją playlistę i zanurzam się w kodowanie. Od wstępnych szkiców po dopracowany kod, informuję cię na bieżąco na każdym kroku.",
+        "heading": "Etap 2"
+    },
+    "approach3": {
+        "title": "Opracowanie i wprowadzenie na rynek",
+        "des": "To tutaj dzieje się magia! W oparciu o zatwierdzony projekt, przełożę wszystko na funkcjonalny kod, budując twoją stronę internetową od podstaw.",
+        "heading": "Etap 3"
+    }
+  },
+  "Footer": {
+    "title1": "Gotowy, aby przenieść",
+    "accent": "swoją",
+    "title2": "cyfrową obecność na wyższy poziom?",
+    "cta": "Skontaktuj się ze mną już dziś i porozmawiajmy o tym, jak mogę pomóc Ci osiągnąć Twoje cele.",
+    "button": "Bądźmy w kontakcie"
+  }
+}

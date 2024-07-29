@@ -3,13 +3,40 @@ import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
+import {useTranslations} from 'next-intl'
+import { link } from "fs";
 
 const RecentProjects = () => {
+  const t = useTranslations("RecentProjects");
+  const keys = ["project1"];
+  const iconListKey = ["project1icons"];
+
+  const projectsInfo = keys.map((key) => {
+    return {
+      id: Number(t(`${key}.id`)),
+      title: t(`${key}.title`),
+      des: t(`${key}.des`),
+      img: t(`${key}.img`),
+      link: t(`${key}.link`),
+    }
+  })
+
+  const projectsIcons = iconListKey.map((key) => {
+    return [t(`${key}.icon1`), t(`${key}.icon2`), t(`${key}.icon3`), t(`${key}.icon4`)]
+  })
+
+  const projects = projectsInfo.map((project, index) => {
+    return {
+      ...project,
+      iconLists: projectsIcons[index]
+    }
+  })
+
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        {t('title1')}{" "}
+        <span className="text-purple">{t('title2')}</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
@@ -46,7 +73,7 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">Check Live Site</p>
+                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">{t('cta')}</p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>

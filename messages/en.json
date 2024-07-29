@@ -1,0 +1,152 @@
+{
+  "Navbar": {
+    "About": {
+      "title": "About me",
+      "link": "#about"
+    },
+    "Projects": {
+      "title": "Projects",
+      "link": "#projects"
+    },
+    "Approach": {
+      "title": "Approach",
+      "link": "#approach"
+    },
+    "Contact": {
+      "title": "Contact",
+      "link": "#contact"
+    }
+  },
+  "Hero": {
+    "h2": "Dynamic Web Magic with Next.js",
+    "animatedText": "Transforming Concepts into Seamless User Experiences",
+    "greeting": "Hi, I'm Bartosz, a Fullstack Developer based in Poland",
+    "button": "See my projects"
+  },
+  "Grid": {
+    "buttonCta": "Copy my email",
+    "buttonAfterCta": "Email copied",
+    "first": {
+      "id": "1",
+      "title": "I prioritize client collaboration, fostering open communication",
+      "description": "",
+      "className": "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      "imgClassName": "w-full h-full",
+      "titleClassName": "justify-end",
+      "img": "/b1.svg",
+      "spareImg": ""
+    },
+    "second": {
+      "id": "2",
+      "title": "I'm very flexible with time zone communications",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "",
+      "spareImg": ""
+    },
+    "third": {
+      "id": "3",
+      "title": "My tech stack",
+      "description": "I constantly try to improve",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-center",
+      "img": "",
+      "spareImg": ""
+    },
+    "fourth": {
+      "id": "4",
+      "title": "Tech enthusiast with a passion for development.",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "/grid.svg",
+      "spareImg": "/b4.svg"
+    },
+    "fifth": {
+      "id": "5",
+      "title": "Currently building a real time chat application.",
+      "description": "The Inside Scoop",
+      "className": "md:col-span-3 md:row-span-2",
+      "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
+      "titleClassName": "justify-center md:justify-start lg:justify-center",
+      "img": "/b5.svg",
+      "spareImg": "/grid.svg"
+    },
+    "sixth": {
+      "id": "6",
+      "title": "Do you want to start a project together?",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-center md:max-w-full max-w-60 text-center",
+      "img": "",
+      "spareImg": ""
+    }
+  },
+  "RecentProjects": {
+    "title1": "A small selection of",
+    "title2": "recent projects",
+    "cta": "Check live site",
+    "project1": {
+      "id": "1",
+      "title": "DevOverflow",
+      "des": "Social media app for developers to help each others with problems.",
+      "img": "/devoverflow.svg",
+      "link": "https://github.com/Podziuu/devoverflow_nextjs13"
+    },
+    "project1icons": {
+        "icon1": "/next.svg",
+        "icon2": "/tail.svg",
+        "icon3": "/ts.svg",
+        "icon4": "/c.svg"
+    }
+  },
+  "Experiences": {
+    "title1": "My",
+    "title2": "work experience",
+    "experience1": {
+        "id": "1",
+        "title": "Computer Science Student",
+        "desc": "Currently studying computer science at the Technical University of Lodz, gaining a solid foundation in programming, algorithms and software engineering principles.",
+        "className": "md:col-span-2",
+        "thumbnail": "/exp1.svg"
+    },
+    "experience2": {
+        "id": "2",
+        "title": "Online Courses Enthusiast",
+        "desc": "Completed numerous online courses on platforms such as Coursera, Udemy, and edX.",
+        "className": "md:col-span-2",
+        "thumbnail": "/exp2.svg"
+    }
+  },
+  "Approach": {
+    "title1": "My",
+    "title2": "approach",
+    "approach1": {
+        "title": "Planning & Strategy",
+        "des": "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.",
+        "heading": "Phase 1"
+    },
+    "approach2": {
+        "title": "Development & Progress Update",
+        "des": "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.",
+        "heading": "Phase 2"
+    },
+    "approach3": {
+        "title": "Development & Launch",
+        "des": "This is where the magic happens! Based on the approved design,  I'll translate everything into functional code, building your website from the ground up.",
+        "heading": "Phase 3"
+    }
+  },
+  "Footer": {
+    "title1": "Ready to take",
+    "accent": "your",
+    "title2": "digital presence to the next level?",
+    "cta": "Reach out to me today and let's discuss how can help you achieve your goals.",
+    "button": "Let's get in touch"
+  }
+}

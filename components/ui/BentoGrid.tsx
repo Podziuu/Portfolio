@@ -37,6 +37,8 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  buttonCta,
+  buttonAfterCta,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -46,6 +48,8 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  buttonCta?: string;
+  buttonAfterCta?: string;
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -153,7 +157,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email copied" : "Copy my email"}
+                title={copied ? buttonAfterCta : buttonCta}
                 icon={<IoCopyOutline />}
                 position="left"
                 otherClasses="!bg-[#161a31]"

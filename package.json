@@ -16,6 +16,7 @@
     "framer-motion": "^11.2.6",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.3",
+    "next-intl": "^3.17.2",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
@@ -27,8 +28,9 @@
     "three-globe": "^2.31.0"
   },
   "devDependencies": {
+    "@types/negotiator": "^0.6.3",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18",
     "@types/react-lottie": "^1.2.10",
     "eslint": "^8",

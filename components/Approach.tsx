@@ -3,20 +3,30 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
+import {useTranslations} from 'next-intl'
 
 const Approach = () => {
+  const t = useTranslations("Approach");
+  const keys = ["approach1", "approach2", "approach3"];
+
+  const approaches = keys.map((key) => {
+    return {
+      title: t(`${key}.title`),
+      des: t(`${key}.des`),
+      heading: t(`${key}.heading`),
+    }
+  })
+
   return (
     <section className="w-full py-20" id="approach">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        {t('title1')} <span className="text-purple">{t('title2')}</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title={approaches[0].title}
+          icon={<AceternityIcon order={approaches[0].heading}/>}
+          des={approaches[0].des}
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,11 +34,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title={approaches[1].title}
+          icon={<AceternityIcon order={approaches[1].heading} />}
+          des={approaches[1].des}
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -43,11 +51,9 @@ const Approach = () => {
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          title={approaches[2].title}
+          icon={<AceternityIcon order={approaches[2].heading} />}
+          des={approaches[2].des}
         >
           <CanvasRevealEffect
             animationSpeed={3}
