@@ -90,7 +90,7 @@
   "RecentProjects": {
     "title1": "Niewielki wybór moich",
     "title2": "ostatnich projektów",
-    "cta": "Sprawdź stronę",
+    "cta": "Sprawdź projekt",
     "project1": {
       "id": "1",
       "title": "DevOverflow",
@@ -103,6 +103,19 @@
         "icon2": "/tail.svg",
         "icon3": "/ts.svg",
         "icon4": "/c.svg"
+    },
+    "project2": {
+      "id": "2",
+      "title": "Podzian Coin",
+      "des": "Stablecoin powiązany z USD na blockchainie Ethereum.",
+      "img": "/stablecoin.svg",
+      "link": "https://github.com/Podziuu/podzian-coin"
+    },
+    "project2icons": {
+        "icon1": "/ethereum.svg",
+        "icon2": "/foundry.svg",
+        "icon3": "/solidity.svg",
+        "icon4": "/chainlink.svg"
     }
   },
   "Experiences": {

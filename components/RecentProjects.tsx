@@ -8,8 +8,8 @@ import { link } from "fs";
 
 const RecentProjects = () => {
   const t = useTranslations("RecentProjects");
-  const keys = ["project1"];
-  const iconListKey = ["project1icons"];
+  const keys = ["project1", "project2"];
+  const iconListKey = ["project1icons", "project2icons"];
 
   const projectsInfo = keys.map((key) => {
     return {
