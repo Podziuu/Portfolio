@@ -1,8 +1,10 @@
+import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
 import {useTranslations} from 'next-intl'
+import { link } from "fs";
 
 const RecentProjects = () => {
   const t = useTranslations("RecentProjects");
