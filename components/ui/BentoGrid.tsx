@@ -8,6 +8,7 @@ import animationData from "@/data/confetti.json";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export const BentoGrid = ({
   className,
@@ -57,6 +58,8 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText("bartekpodemski@gmail.com");
 
     setCopied(true);
+
+    sendGTMEvent({ event: "emailCopied" });
   };
   return (
     <div
